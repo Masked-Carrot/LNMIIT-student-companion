@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="LNMIIT"
+        android:id="@+id/lnmiit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:textColor="#5d68f8"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/faltu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can't wait for you to sigin"
+        app:layout_constraintTop_toBottomOf="@+id/ani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#5d68f8"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ani"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnmiit"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="signinani.json"
+        app:lottie_loop="true" />
+
+<com.google.android.gms.common.SignInButton
+    android:id="@+id/sign_in"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/faltu"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

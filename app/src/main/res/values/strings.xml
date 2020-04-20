@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LNMIIT</string>
+    <string name="title_home">Home</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_profile">Profile</string>
+
+
+    //home
+    <string name="subject_text">Subject</string>
+    <string name="overview">Overview</string>
+    <string name="upcomming">Upcomming</string>
+    <string name="schedule">Schedule</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="save">Save</string>
+    <string name="credits">Credits</string>
+
+
+</resources>
